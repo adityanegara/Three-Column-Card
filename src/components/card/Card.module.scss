@@ -1,0 +1,67 @@
+.card {
+  padding-top: 8vh;
+  padding-bottom: 8vh;
+  width: 100%;
+  .card-content {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card-title {
+    margin-top: 5vh;
+    font-size: 2em;
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsla(0, 0%, 100%, 0.75);
+  }
+  .card-description {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 3vh;
+    line-height: 28px;
+  }
+  .learn-button {
+    margin-top: 10vh;
+    button {
+      font-family: 'Lexend Deca', sans-serif !important;
+      min-width: 44px;
+      min-height: 44px;
+      cursor: pointer;
+      border-radius: 20px;
+      border: none;
+      padding: 2vh 2.5vw;
+      background-color: hsl(0, 0%, 95%);
+      transition: ease-in 0.2s;
+    }
+    button:hover {
+      background-color: hsl(0, 1%, 85%);
+    }
+  }
+}
+
+.card:nth-child(1) {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.card:nth-last-child(1) {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+@media only screen and (max-width: 800px) {
+  .card:nth-child(1) {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0px;
+  }
+  .card:nth-last-child(1) {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+
+  .learn-button {
+    button {
+      border-radius: 25px !important;
+      padding: 3vh 8vw !important;
+    }
+  }
+}
